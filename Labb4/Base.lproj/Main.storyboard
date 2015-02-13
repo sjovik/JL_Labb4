@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S2n-xy-Jbu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UKo-qf-S4y">
+            <objects>
+                <viewController id="S2n-xy-Jbu" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MVc-Vn-7cn"/>
+                        <viewControllerLayoutGuide type="bottom" id="pqn-YH-5Pq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cz8-tO-aAc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-xg-zaa">
+                                <rect key="frame" x="37" y="86" width="267" height="364"/>
+                                <color key="backgroundColor" red="0.72375396189999996" green="1" blue="0.82575634490000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comp:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raA-wa-4tF">
+                                <rect key="frame" x="16" y="20" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOp-XE-JqS">
+                                <rect key="frame" x="16" y="439" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfz-dT-Fb9">
+                                <rect key="frame" x="138" y="218" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-Ba-iUL">
+                                <rect key="frame" x="92" y="405" width="137" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSr-ys-VYT">
+                                <rect key="frame" x="102" y="100" width="137" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAU-9q-AjT">
+                                <rect key="frame" x="145" y="435" width="30" height="30"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="S2n-xy-Jbu" eventType="touchUpInside" id="hLp-6b-GEE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="raA-wa-4tF" firstAttribute="top" secondItem="MVc-Vn-7cn" secondAttribute="bottom" id="2sH-7l-USW"/>
+                            <constraint firstItem="eAU-9q-AjT" firstAttribute="centerX" secondItem="raA-wa-4tF" secondAttribute="centerX" id="4UD-UV-TY1"/>
+                            <constraint firstItem="eAU-9q-AjT" firstAttribute="centerY" secondItem="cz8-tO-aAc" secondAttribute="centerY" constant="210" id="5PN-z8-cT7"/>
+                            <constraint firstItem="raA-wa-4tF" firstAttribute="trailing" secondItem="cz8-tO-aAc" secondAttribute="trailingMargin" id="B0l-Ks-Zu4"/>
+                            <constraint firstItem="nfO-Ba-iUL" firstAttribute="top" secondItem="cz8-tO-aAc" secondAttribute="top" constant="405" id="BWy-aQ-QlY"/>
+                            <constraint firstItem="eAU-9q-AjT" firstAttribute="centerX" secondItem="nfO-Ba-iUL" secondAttribute="centerX" id="Hng-Ot-qar"/>
+                            <constraint firstItem="Mfz-dT-Fb9" firstAttribute="centerX" secondItem="nfO-Ba-iUL" secondAttribute="centerX" id="IaZ-QA-ABj"/>
+                            <constraint firstItem="yWq-xg-zaa" firstAttribute="top" secondItem="raA-wa-4tF" secondAttribute="bottom" constant="45" id="JUx-kJ-BG1"/>
+                            <constraint firstItem="SOp-XE-JqS" firstAttribute="trailing" secondItem="yWq-xg-zaa" secondAttribute="trailing" id="OwL-um-N5E"/>
+                            <constraint firstItem="raA-wa-4tF" firstAttribute="leading" secondItem="SOp-XE-JqS" secondAttribute="leading" id="OzG-8N-nlo"/>
+                            <constraint firstItem="pqn-YH-5Pq" firstAttribute="top" secondItem="yWq-xg-zaa" secondAttribute="bottom" constant="30" id="UaV-OB-W3x"/>
+                            <constraint firstItem="raA-wa-4tF" firstAttribute="trailing" secondItem="SOp-XE-JqS" secondAttribute="trailing" id="ae9-vU-vZV"/>
+                            <constraint firstItem="Mfz-dT-Fb9" firstAttribute="centerY" secondItem="eAU-9q-AjT" secondAttribute="centerY" constant="-210" id="faZ-sb-hFa"/>
+                            <constraint firstItem="raA-wa-4tF" firstAttribute="trailing" secondItem="yWq-xg-zaa" secondAttribute="trailing" id="fly-Ck-DhD"/>
+                            <constraint firstItem="pqn-YH-5Pq" firstAttribute="top" secondItem="nfO-Ba-iUL" secondAttribute="bottom" constant="38" id="gkh-ts-Grg"/>
+                            <constraint firstItem="raA-wa-4tF" firstAttribute="leading" secondItem="cz8-tO-aAc" secondAttribute="leadingMargin" id="idd-wL-ZE4"/>
+                            <constraint firstItem="yWq-xg-zaa" firstAttribute="leading" secondItem="cz8-tO-aAc" secondAttribute="leadingMargin" constant="21" id="kee-z5-FOU"/>
+                            <constraint firstItem="nfO-Ba-iUL" firstAttribute="leading" secondItem="cz8-tO-aAc" secondAttribute="leadingMargin" constant="76" id="mSv-vH-duG"/>
+                            <constraint firstItem="Mfz-dT-Fb9" firstAttribute="top" secondItem="cz8-tO-aAc" secondAttribute="top" constant="218" id="u3X-Ug-vx2"/>
+                            <constraint firstAttribute="bottom" secondItem="SOp-XE-JqS" secondAttribute="bottom" constant="20" symbolic="YES" id="vBb-Vg-3RF"/>
+                            <constraint firstItem="Mfz-dT-Fb9" firstAttribute="leading" secondItem="cz8-tO-aAc" secondAttribute="leading" constant="138" id="zjs-oa-eob"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6MN-B9-Ces" appends="YES" id="N6G-0W-Bzg"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="jEV-3E-ImR"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="ballView" destination="Mfz-dT-Fb9" id="CnR-Th-Nkt"/>
+                        <outlet property="compPadView" destination="tSr-ys-VYT" id="3Zb-bz-9mm"/>
+                        <outlet property="compScoreLabel" destination="raA-wa-4tF" id="5N5-OZ-FnJ"/>
+                        <outlet property="fieldView" destination="yWq-xg-zaa" id="U5B-zA-aFg"/>
+                        <outlet property="padView" destination="nfO-Ba-iUL" id="aLH-YU-nqU"/>
+                        <outlet property="playButton" destination="eAU-9q-AjT" id="AOt-Ig-DVW"/>
+                        <outlet property="playerScoreLabel" destination="SOp-XE-JqS" id="SAC-6v-tz9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lJ-Bg-CWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6MN-B9-Ces">
+                    <connections>
+                        <action selector="movePaddleGest:" destination="S2n-xy-Jbu" id="hCz-YP-hV5"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1737" y="931"/>
+        </scene>
+    </scenes>
+</document>
